@@ -2,21 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
 import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import { AuthProvider } from './contexts/AuthContext';
-import { NotificationProvider } from './contexts/NotificationContext';
+import './styles/theme.css';
 
 function App() {
   return (
-    <AuthProvider>
-      <NotificationProvider>
-        <Router>
-          <Navbar />
-          <AppRoutes />
-          <Footer />
-        </Router>
-      </NotificationProvider>
-    </AuthProvider>
+    <Router>
+      <Navbar />
+      <AppRoutes />
+    </Router>
   );
 }
 
