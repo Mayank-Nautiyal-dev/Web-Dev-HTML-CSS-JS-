@@ -1,0 +1,41 @@
+:root {
+  --primary-bg: #1a0025;
+  --secondary-bg: #23003a;
+  --neon-purple: #a259ff;
+  --neon-blue: #00f0ff;
+  --text-main: #fff;
+  --text-muted: #b3b3b3;
+  --border: #3a0066;
+  --shadow: 0 0 16px 2px rgba(162,89,255,0.2);
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--neon-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--neon-blue);
+}
+
+input, button, select {
+  font-family: inherit;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--secondary-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 6px;
+}
